@@ -3,6 +3,8 @@ package com.example.fragmentcontainerviewsample;
 import android.content.Context;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
@@ -18,16 +20,24 @@ import android.widget.Toast;
 public class DemoFragment extends Fragment {
 
     private DemoFragmentListener demoFragmentListener;
+    Button add;
+    EditText num1,num2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_demo, container, false);
 
-        Button add = view.findViewById(R.id.add);
-        EditText num1 = view.findViewById(R.id.num1);
-        EditText num2 = view.findViewById(R.id.num2);
+        add = view.findViewById(R.id.add);
+        num1 = view.findViewById(R.id.num1);
+        num2 = view.findViewById(R.id.num2);
 
+        return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,8 +55,6 @@ public class DemoFragment extends Fragment {
 
             }
         });
-
-        return view;
     }
 
     @Override

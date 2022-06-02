@@ -1,6 +1,7 @@
 package com.example.fragmentsample;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,6 +12,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+import java.util.Calendar;
 
 public class StaticFragment extends Fragment {
 
@@ -45,6 +49,17 @@ public class StaticFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         Log.i(TAG,className+ " OnViewCreated");
         super.onViewCreated(view, savedInstanceState);
+        Button button = view.findViewById(R.id.share);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.addCategory(Intent.CATEGORY_DEFAULT);
+                intent.setType("*/*");
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

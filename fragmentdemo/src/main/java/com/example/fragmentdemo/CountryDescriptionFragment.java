@@ -22,6 +22,14 @@ public class CountryDescriptionFragment extends Fragment {
     String countryName;
     String countryDescription;
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Bundle bundle = getArguments();
+        countryName = bundle.getString(FragmentActionListener.SELECTED_COUNTRY,"India");
+        countryDescription = getString(getStringId(countryName));
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -37,9 +45,6 @@ public class CountryDescriptionFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Bundle bundle = getArguments();
-        countryName = bundle.getString(FragmentActionListener.SELECTED_COUNTRY,"India");
-        countryDescription = getString(getStringId(countryName));
     }
 
     @Override

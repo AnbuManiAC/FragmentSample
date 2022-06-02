@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/StaticFragment" />
+            <option value="$PROJECT_DIR$/childfragmentmanager" />
             <option value="$PROJECT_DIR$/dynamicfragment" />
             <option value="$PROJECT_DIR$/fragmentcontainerviewsample" />
             <option value="$PROJECT_DIR$/fragmentdemo" />

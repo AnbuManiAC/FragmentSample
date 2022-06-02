@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity implements DemoFragment.Demo
     public void messageFromFragment(int num1, int num2) {
         demoFragment2 = (DemoFragment2) fragmentManager.findFragmentById(R.id.fragment2);
         demoFragment2.printNumber(num1+num2);
-
     }
 }
 

@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         popFragment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fragmentManager.popBackStack();
+                fragmentManager.popBackStack(1,FragmentManager.POP_BACK_STACK_INCLUSIVE);
             }
         });
 
@@ -98,10 +98,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.fragmentLayout, dynamicFragment, "demoFragment");
-        fragmentTransaction.addToBackStack("Replace " +
-                "" +
-                "" + dynamicFragment.toString());
+        fragmentTransaction.replace(R.id.fragmentLayout, dynamicFragment, "demoFragment");
+//        fragmentTransaction.addToBackStack("Replace " +
+//                "" +
+//                "" + dynamicFragment.toString());
 
 
         fragmentTransaction.commit();
@@ -113,7 +113,6 @@ public class MainActivity extends AppCompatActivity {
         Fragment fragment = fragmentManager.findFragmentById(R.id.fragmentLayout);
         if(fragment!=null){
             fragmentTransaction.remove(fragment);
-            fragmentTransaction.addToBackStack("Remove "+fragment.toString());
             fragmentTransaction.commit();
         }
         else{
