@@ -8,6 +8,9 @@
         <entry key="StaticFragment/src/main/res/layout/fragment_static.xml" value="0.24818840579710144" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_static.xml" value="0.35625" />
+        <entry key="childfragmentmanager/src/main/res/layout/activity_main.xml" value="0.276268115942029" />
+        <entry key="childfragmentmanager/src/main/res/layout/fragment_stop_watch.xml" value="0.24818840579710144" />
+        <entry key="childfragmentmanager/src/main/res/layout/fragment_workout_detail.xml" value="0.276268115942029" />
         <entry key="dynamicfragment/src/main/res/layout/activity_main.xml" value="0.24818840579710144" />
         <entry key="dynamicfragment/src/main/res/layout/fragment_dynamic.xml" value="0.14629629629629629" />
         <entry key="dynamicfragment/src/main/res/layout/fragment_dynamic1.xml" value="0.10507246376811594" />
@@ -24,6 +27,9 @@
         <entry key="fragmentnav/src/main/res/layout/fragment_1.xml" value="0.276268115942029" />
         <entry key="fragmentnav/src/main/res/layout/fragment_2.xml" value="0.276268115942029" />
         <entry key="fragmentnav/src/main/res/layout/fragment_3.xml" value="0.276268115942029" />
+        <entry key="fragmentresultapi/src/main/res/layout/activity_main.xml" value="0.276268115942029" />
+        <entry key="fragmentresultapi/src/main/res/layout/fragment_1.xml" value="0.276268115942029" />
+        <entry key="fragmentresultapi/src/main/res/layout/fragment_2.xml" value="0.1" />
         <entry key="navigationcomponentexample/src/main/res/layout/activity_main.xml" value="0.276268115942029" />
         <entry key="navigationcomponentexample/src/main/res/layout/fragment_choose_recipient.xml" value="0.276268115942029" />
         <entry key="navigationcomponentexample/src/main/res/layout/fragment_confirmation.xml" value="0.276268115942029" />
@@ -31,6 +37,8 @@
         <entry key="navigationcomponentexample/src/main/res/layout/fragment_specify_amount.xml" value="0.276268115942029" />
         <entry key="navigationcomponentexample/src/main/res/layout/fragment_view_balance.xml" value="0.276268115942029" />
         <entry key="navigationcomponentexample/src/main/res/layout/fragment_view_transaction.xml" value="0.276268115942029" />
+        <entry key="recyclerview/src/main/res/layout/activity_main.xml" value="0.276268115942029" />
+        <entry key="recyclerview/src/main/res/layout/item_todo.xml" value="0.276268115942029" />
       </map>
     </option>
   </component>

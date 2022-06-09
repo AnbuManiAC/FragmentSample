@@ -16,7 +16,9 @@
             <option value="$PROJECT_DIR$/fragmentcontainerviewsample" />
             <option value="$PROJECT_DIR$/fragmentdemo" />
             <option value="$PROJECT_DIR$/fragmentnav" />
+            <option value="$PROJECT_DIR$/fragmentresultapi" />
             <option value="$PROJECT_DIR$/navigationcomponentexample" />
+            <option value="$PROJECT_DIR$/recyclerview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

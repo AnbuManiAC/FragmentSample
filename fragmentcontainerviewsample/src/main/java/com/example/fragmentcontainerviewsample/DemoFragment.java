@@ -38,6 +38,7 @@ public class DemoFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

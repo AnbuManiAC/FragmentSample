@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     backstackEntryMessage.append(entry.getName()+"\n");
                 }
                 Log.i("backStack",backstackEntryMessage.toString());
+
             }
         });
         addFragment.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         popFragment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fragmentManager.popBackStack(1,FragmentManager.POP_BACK_STACK_INCLUSIVE);
+                fragmentManager.popBackStackImmediate();
             }
         });
 
@@ -99,9 +100,9 @@ public class MainActivity extends AppCompatActivity {
 
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragmentLayout, dynamicFragment, "demoFragment");
-//        fragmentTransaction.addToBackStack("Replace " +
-//                "" +
-//                "" + dynamicFragment.toString());
+        fragmentTransaction.addToBackStack("Replace " +
+                "" +
+                "" + dynamicFragment.toString());
 
 
         fragmentTransaction.commit();
